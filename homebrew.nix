@@ -36,7 +36,7 @@
       "scrcpy"
       "vim"
       "wireguard-tools"
-      "dotnet-sdk"
+      "dotnet"
       "postgresql"
     ];
 
