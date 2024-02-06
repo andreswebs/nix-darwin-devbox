@@ -14,7 +14,7 @@
     masApps = { };
 
     casks = [
-
+      "android-studio"
     ];
 
 
