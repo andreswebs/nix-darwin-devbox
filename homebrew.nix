@@ -19,7 +19,24 @@
 
 
     brews = [
-
+      "gnupg",
+      "curl",
+      "git",
+      "htop",
+      "inetutils",
+      "jq",
+      "p7zip",
+      "unzip",
+      "ossp-uuid",
+      # "gcc", 
+      # "make", 
+      # "python@2", 
+      "expect",
+      "scrcpy",
+      "vim",
+      "wireguard-tools",
+      "dotnet-sdk",
+      "postgresql"
     ];
 
     taps = [
