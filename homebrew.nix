@@ -19,6 +19,7 @@
 
 
     brews = [
+      "argocd",
       "gnupg",
       "curl",
       "git",
@@ -36,7 +37,7 @@
       "vim",
       "wireguard-tools",
       "dotnet-sdk",
-      "postgresql"
+      "postgresql",
     ];
 
     taps = [
