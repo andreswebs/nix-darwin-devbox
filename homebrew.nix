@@ -8,13 +8,22 @@
     onActivation = {
       autoUpdate = true;
       upgrade = true;
-      cleanup = "none";
+      cleanup = "none"; ## be careful if changing this
     };
 
     masApps = { };
 
     casks = [
+      "android-platform-tools"
       "jetbrains-toolbox"
+      "pgadmin4"
+      "postman"
+      "vnc-viewer"
+      "google-chrome"
+      "docker"
+      "visual-studio-code"
+      "zoom"
+      "virtualbox"
     ];
 
     brews = [
@@ -24,6 +33,7 @@
       "git"
       "htop"
       "inetutils"
+      "mtr"
       "jq"
       "p7zip"
       "unzip"
@@ -40,6 +50,9 @@
       "postgresql"
       "kubernetes-cli"
       "minikube"
+      "nvm"
+      "krew"
+      "k9s"
     ];
 
     taps = [
