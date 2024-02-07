@@ -7,6 +7,10 @@ This sets up an opinionated collection of dev dependencies on Mac arm64
 
 Homebrew must be previously installed.
 
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 **DANGER:** If you change the `onActivation` property in
 [homebrew.nix](homebrew.nix) to a value different from `none`, it can nuke your
 other Homebrew packages. Be careful.
