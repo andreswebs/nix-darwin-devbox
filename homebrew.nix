@@ -23,7 +23,7 @@
       "docker"
       "visual-studio-code"
       "zoom"
-      "virtualbox"
+      # "virtualbox"  ## not available on apple silicon
     ];
 
     brews = [
@@ -46,7 +46,7 @@
       "vim"
       "wireguard-tools"
       "dotnet@6"
-      "dotnet@7"
+      "dotnet"
       "postgresql"
       "kubernetes-cli"
       "minikube"
