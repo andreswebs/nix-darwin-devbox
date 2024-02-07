@@ -1,5 +1,5 @@
 {
-  description = "devbox-2";
+  description = "devbox";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";

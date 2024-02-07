@@ -26,6 +26,12 @@ chmod +x nix-installer.sh
 ./nix-installer.sh install
 ```
 
+or if you prefer the YOLO command:
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+```
+
 2. Enable experimental features for flakes by default
 
 ```sh
@@ -35,13 +41,24 @@ experimental-features = nix-command flakes
 CONF
 ```
 
-3. Clone this repo and bootstrap the flake with your hostname:
+3. Clone this repo (if you prefer, fork it first and use your own version)
 
 ```sh
-# if you prefer, fork it first and use your own version
 mkdir -p ~/.config
 # actually ~/.config/nix-darwin is arbitrary, it can be any directory (adjust all commands if changing it)
 git clone https://github.com/andreswebs/nix-darwin-devbox.git ~/.config/nix-darwin
+```
+
+Alternatively, if you're bootstrapping a new system without `git` installed,
+run:
+
+```sh
+nix shell nixpkgs#git --command nix flake clone github:andreswebs/nix-darwin-devbox --dest ~/.config/nix-darwin
+```
+
+4. Bootstrap the flake with your hostname:
+
+```sh
 sed -i '' "s/devbox/$(hostname)/g" ~/.config/nix-darwin/flake.nix
 nix run nix-darwin -- switch --flake ~/.config/nix-darwin
 ```
