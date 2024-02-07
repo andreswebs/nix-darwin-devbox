@@ -14,9 +14,9 @@
     masApps = { };
 
     casks = [
-      "android-studio"
+      # "android-studio"
+      "jetbrains-toolbox"
     ];
-
 
     brews = [
       "argocd"
@@ -38,6 +38,8 @@
       "wireguard-tools"
       "dotnet"
       "postgresql"
+      "kubernetes-cli"
+      "minikube"
     ];
 
     taps = [

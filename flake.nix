@@ -1,5 +1,5 @@
 {
-  description = "devbox";
+  description = "devbox-2";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -41,8 +41,8 @@
     in
     {
       # Build darwin flake using:
-      # $ darwin-rebuild build --flake .#258ba03e-dfb1-46cc-9050-0b9efd311b2f
-      darwinConfigurations."258ba03e-dfb1-46cc-9050-0b9efd311b2f" = nix-darwin.lib.darwinSystem {
+      # $ darwin-rebuild build --flake .
+      darwinConfigurations."devbox" = nix-darwin.lib.darwinSystem {
         modules = [
           configuration
           ./homebrew.nix
@@ -50,6 +50,6 @@
       };
 
       # Expose the package set, including overlays, for convenience.
-      darwinPackages = self.darwinConfigurations."258ba03e-dfb1-46cc-9050-0b9efd311b2f".pkgs;
+      darwinPackages = self.darwinConfigurations."devbox".pkgs;
     };
 }
