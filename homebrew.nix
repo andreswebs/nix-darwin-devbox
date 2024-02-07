@@ -14,7 +14,6 @@
     masApps = { };
 
     casks = [
-      # "android-studio"
       "jetbrains-toolbox"
     ];
 
@@ -29,14 +28,15 @@
       "p7zip"
       "unzip"
       "ossp-uuid"
-      # "gcc" 
-      # "make" 
-      # "python@2" 
+      "gcc"
+      "make"
+      # "python@2"
       "expect"
       "scrcpy"
       "vim"
       "wireguard-tools"
-      "dotnet"
+      "dotnet@6"
+      "dotnet@7"
       "postgresql"
       "kubernetes-cli"
       "minikube"
@@ -48,3 +48,6 @@
 
   };
 }
+
+
+# https://stackoverflow.com/questions/44654216/correct-way-to-install-psql-without-full-postgres-on-macos

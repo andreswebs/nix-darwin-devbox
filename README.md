@@ -3,6 +3,18 @@
 This sets up an opinionated collection of dev dependencies on Mac arm64
 (M1/M2/...).
 
+## Pre-requisites
+
+Homebrew must be previously installed.
+
+**DANGER:** If you change the `onActivation` property in
+[homebrew.nix](homebrew.nix) to a value different from `none`, it can nuke your
+other Homebrew packages. Be careful.
+
+Read the options before changing the [homebrew.nix](homebrew.nix) configuration:
+
+<https://daiderd.com/nix-darwin/manual/index.html#opt-homebrew.onActivation.upgrade>
+
 ## Bootstrap
 
 1. Install the
@@ -23,8 +35,7 @@ experimental-features = nix-command flakes
 CONF
 ```
 
-3. Clone this repo and bootstrap the flake with your hostname using
-   [nix-darwin](https://github.com/LnL7/nix-darwin)
+3. Clone this repo and bootstrap the flake with your hostname:
 
 ```sh
 # if you prefer, fork it first and use your own version
@@ -50,3 +61,7 @@ darwin-rebuild switch --flake ~/.config/nix-darwin
 <https://jvns.ca/blog/2023/11/11/notes-on-nix-flakes/>
 
 <https://github.com/LnL7/nix-darwin>
+
+<https://github.com/ryan4yin/nix-darwin-kickstarter>
+
+<https://daiderd.com/nix-darwin/manual/index.html>
