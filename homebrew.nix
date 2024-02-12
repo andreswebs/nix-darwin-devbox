@@ -20,7 +20,7 @@
       "postman"
       "vnc-viewer"
       "google-chrome"
-      "docker"
+      "./casks/docker.rb"
       "visual-studio-code"
       "zoom"
       # "virtualbox"  ## not available on apple silicon

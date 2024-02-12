@@ -42,7 +42,7 @@
     {
       # Build darwin flake using:
       # $ darwin-rebuild build --flake .
-      darwinConfigurations."devbox" = nix-darwin.lib.darwinSystem {
+      darwinConfigurations."Mac-mini" = nix-darwin.lib.darwinSystem {
         modules = [
           configuration
           ./homebrew.nix
@@ -50,6 +50,6 @@
       };
 
       # Expose the package set, including overlays, for convenience.
-      darwinPackages = self.darwinConfigurations."devbox".pkgs;
+      darwinPackages = self.darwinConfigurations."Mac-mini".pkgs;
     };
 }

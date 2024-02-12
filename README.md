@@ -65,7 +65,7 @@ nix shell nixpkgs#git --command nix flake clone github:andreswebs/nix-darwin-dev
 4. Bootstrap the flake with your hostname:
 
 ```sh
-sed -i '' "s/devbox/$(hostname)/g" ~/.config/nix-darwin/flake.nix
+sed -i '' "s/devbox/$(scutil --get LocalHostName)/g" ~/.config/nix-darwin/flake.nix
 nix run nix-darwin -- switch --flake ~/.config/nix-darwin
 ```
 
