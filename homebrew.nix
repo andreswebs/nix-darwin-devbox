@@ -8,8 +8,8 @@
     onActivation = {
       autoUpdate = true;
       upgrade = true;
-      # cleanup = "none"; ## be careful if changing this
-      cleanup = "zap";
+      cleanup = "none"; ## be careful if changing this
+      # cleanup = "zap";
     };
 
     masApps = { };
