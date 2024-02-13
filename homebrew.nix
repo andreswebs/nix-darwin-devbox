@@ -8,22 +8,22 @@
     onActivation = {
       autoUpdate = true;
       upgrade = true;
-      cleanup = "none"; ## be careful if changing this
+      # cleanup = "none"; ## be careful if changing this
+      cleanup = "zap";
     };
 
     masApps = { };
 
     casks = [
-      "android-platform-tools"
+      "android-studio"
       "jetbrains-toolbox"
       "pgadmin4"
       "postman"
       "vnc-viewer"
       "google-chrome"
-      "./casks/docker.rb"
+      # "./casks/docker.rb"
       "visual-studio-code"
       "zoom"
-      # "virtualbox"  ## not available on apple silicon
     ];
 
     brews = [
@@ -47,16 +47,17 @@
       "wireguard-tools"
       "dotnet@6"
       "dotnet"
-      "postgresql"
+      "postgresql@16"
       "kubernetes-cli"
       "minikube"
       "nvm"
       "krew"
       "k9s"
+      "sdkman-cli"
     ];
 
     taps = [
-
+      "sdkman/tap"
     ];
 
   };
