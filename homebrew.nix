@@ -24,6 +24,9 @@
       # "./casks/docker.rb"
       "visual-studio-code"
       "zoom"
+      "amazon-ssm-agent"
+      "ec2-macos-init"
+      "ec2-macos-utils"
     ];
 
     brews = [
