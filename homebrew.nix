@@ -21,9 +21,11 @@
       "postman"
       "vnc-viewer"
       "google-chrome"
-      # "./casks/docker.rb"
+      "./casks/docker.rb"
       "visual-studio-code"
       "zoom"
+
+      ## used by EC2 MacOS
       "amazon-ssm-agent"
       "ec2-macos-init"
       "ec2-macos-utils"
