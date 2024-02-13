@@ -62,6 +62,7 @@
     ];
 
     taps = [
+      "aws/homebrew-aws"
       "sdkman/tap"
     ];
 
